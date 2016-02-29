@@ -1,0 +1,87 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'jsx-requirejs-plugin' ]
+2 info using npm@2.14.7
+3 info using node@v4.2.2
+4 verbose install initial load of /usr/local/workspace/workspace/workhome/package.json
+5 verbose installManyTop reading scoped package data from /usr/local/workspace/workspace/workhome/node_modules/gulp/package.json
+6 verbose installManyTop reading scoped package data from /usr/local/workspace/workspace/workhome/node_modules/gulp-concat/package.json
+7 verbose installManyTop reading scoped package data from /usr/local/workspace/workspace/workhome/node_modules/gulp-uglify/package.json
+8 verbose readDependencies loading dependencies from /usr/local/workspace/workspace/workhome/package.json
+9 silly cache add args [ 'jsx-requirejs-plugin', null ]
+10 verbose cache add spec jsx-requirejs-plugin
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'jsx-requirejs-plugin',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'jsx-requirejs-plugin',
+11 silly cache add   rawSpec: '',
+11 silly cache add   spec: '*',
+11 silly cache add   type: 'range' }
+12 silly addNamed jsx-requirejs-plugin@*
+13 verbose addNamed "*" is a valid semver range for jsx-requirejs-plugin
+14 silly addNameRange { name: 'jsx-requirejs-plugin', range: '*', hasData: false }
+15 silly mapToRegistry name jsx-requirejs-plugin
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/jsx-requirejs-plugin
+19 verbose addNameRange registry:https://registry.npmjs.org/jsx-requirejs-plugin not in flight; fetching
+20 verbose request uri https://registry.npmjs.org/jsx-requirejs-plugin
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 2:26:13 PM
+23 verbose request id 4a4a6ec186327996
+24 http request GET https://registry.npmjs.org/jsx-requirejs-plugin
+25 http 404 https://registry.npmjs.org/jsx-requirejs-plugin
+26 verbose headers { 'content-type': 'application/json',
+26 verbose headers   'cache-control': 'max-age=0',
+26 verbose headers   'content-length': '2',
+26 verbose headers   'accept-ranges': 'bytes',
+26 verbose headers   date: 'Mon, 29 Feb 2016 06:26:15 GMT',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   age: '0',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'x-served-by': 'cache-lcy1125-LCY',
+26 verbose headers   'x-cache': 'MISS',
+26 verbose headers   'x-cache-hits': '0',
+26 verbose headers   'x-timer': 'S1456727175.543172,VS0,VE96' }
+27 silly get cb [ 404,
+27 silly get   { 'content-type': 'application/json',
+27 silly get     'cache-control': 'max-age=0',
+27 silly get     'content-length': '2',
+27 silly get     'accept-ranges': 'bytes',
+27 silly get     date: 'Mon, 29 Feb 2016 06:26:15 GMT',
+27 silly get     via: '1.1 varnish',
+27 silly get     age: '0',
+27 silly get     connection: 'keep-alive',
+27 silly get     'x-served-by': 'cache-lcy1125-LCY',
+27 silly get     'x-cache': 'MISS',
+27 silly get     'x-cache-hits': '0',
+27 silly get     'x-timer': 'S1456727175.543172,VS0,VE96' } ]
+28 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/jsx-requirejs-plugin
+28 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+28 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:242:14)
+28 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+28 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+28 verbose stack     at emitTwo (events.js:87:13)
+28 verbose stack     at Request.emit (events.js:172:7)
+28 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1063:14)
+28 verbose stack     at emitOne (events.js:82:20)
+28 verbose stack     at Request.emit (events.js:169:7)
+28 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1009:12)
+29 verbose statusCode 404
+30 verbose pkgid jsx-requirejs-plugin
+31 verbose cwd /usr/local/workspace/workspace/workhome
+32 error Darwin 14.5.0
+33 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "jsx-requirejs-plugin"
+34 error node v4.2.2
+35 error npm  v2.14.7
+36 error code E404
+37 error 404 Registry returned 404 for GET on https://registry.npmjs.org/jsx-requirejs-plugin
+37 error 404
+37 error 404 'jsx-requirejs-plugin' is not in the npm registry.
+37 error 404 You should bug the author to publish it (or use the name yourself!)
+37 error 404
+37 error 404 Note that you can also install from a
+37 error 404 tarball, folder, http url, or git url.
+38 verbose exit [ 1, true ]
