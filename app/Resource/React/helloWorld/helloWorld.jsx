@@ -1,6 +1,7 @@
 define([
-    'react'
-], function(React){
+    'react',
+    'react-dom'
+], function(React, ReactDom){
     var helloWorld = {
 
         init: function(){
@@ -15,7 +16,7 @@ define([
             });
 
             setInterval(function(){
-                React.render(
+                ReactDom.render(
                     <HelloWorld date={new Date()}/>,
                     $('#example')[0]
                 );
